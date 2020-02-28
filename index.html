@@ -17,7 +17,7 @@
 		<link rel="icon" href="images/icon.png" type="image/png">
 		<link rel="apple-touch-icon" href="images/logo_apple.png">
 		<link rel="stylesheet" href="assets/css/main.min.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<!--noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript-->
 	</head>
 	<body class="is-preload">
 		<div id="wrapper">
@@ -64,6 +64,20 @@
 			window.onload = function() { document.body.classList.remove('is-preload'); }
 			window.ontouchmove = function() { return false; }
 			window.onorientationchange = function() { document.body.scrollTop = 0; }
+		</script>
+
+		<script type="text/javascript">
+			// Set up service worker
+			if ('serviceWorker' in navigator) {
+			navigator.serviceWorker
+				.register('service-worker.js', {scope: '.'});
+			}
+
+			// Easter Egg to get it full black
+			// Awesome for OLED screens
+			if (localStorage.getItem('isDeepBlack')) {
+			document.body.classList.add('deepblack')
+			}
 		</script>
 	</body>
 </html>
