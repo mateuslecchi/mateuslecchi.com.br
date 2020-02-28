@@ -48,5 +48,11 @@
       "type": "image/png"
     }
   ],
-  "splash_pages": null
+  "splash_pages": "null",
+  "url" : "https://mateuslecchi.com.br",
+	"lang" : "Portuguese",
+	"screenshots" : [],
+	"orientation" : "any",
+	"description" : "Desenvolvedor Full Stack, gamer e pequeno produtor de vídeos, entre em contato!",
+	"generated" : "undefined"
 }
