@@ -44,8 +44,8 @@
 
 				<!-- Footer -->
 					<footer id="footer">
-						<p class="copyright">&copy; 2020 Mateus Lecchi</p>
-						<small class="copyright">Template: <a href="http://html5up.net">HTML5 UP</a></small>
+						<p class="copyright">&copy; 2019-<span id="year"></span> Mateus Lecchi</p>
+						<small class="copyright">Template: <a href="http://html5up.net" target="_blank" rel="noreferrer">HTML5 UP</a></small>
 					</footer>
 
 			</div>
@@ -92,6 +92,11 @@
 			if (localStorage.getItem('isDeepBlack')) {
 			document.body.classList.add('deepblack')
 			}
+		</script>
+
+		<script>
+			//year script
+			document.getElementById("year").innerHTML = new Date().getFullYear();
 		</script>
 	</body>
 </html>
