@@ -1,0 +1,5 @@
+# Block access to .git directory
+<Directory ~ "\.git">
+    Order allow,deny
+    Deny from all
+</Directory>
