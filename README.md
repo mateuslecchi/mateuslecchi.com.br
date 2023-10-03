@@ -1,4 +1,4 @@
-# mateuslecchi.com.br
+# lecchi.com.br
 
 A static personal website based on the [Aerial](https://html5up.net/aerial) theme from [HTML5 UP](https://html5up.net/).
 
